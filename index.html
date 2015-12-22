@@ -6,14 +6,20 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/javascript.js"></script> 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
  </head> 
 <body>
+<div class="container-fluid">
 <h1 class ="title"> Etch-a-Sketchy </h1>
-<h2 class ="title"> An Alex Beaulieu site. </h2>
-
-<button class="clear" type="button"> Clear Grid </button>
-<button class="clear" id="multicolor" type="button"> Multi-Colored!</button> 
-
-<div class ="container"></div>  
+<h4 class ="title"> An Alex Beaulieu site. </h4>
+<div class="allbuttons">
+<button class="btn btn-danger" id="clear" type="button"> Clear Grid </button>
+<button class="btn btn-primary" id="multicolor" type="button"> Random Color </button> 
+<button class="btn btn-primary" id="black" type="button"> Standard (Black) </button> 
+<button class="btn btn-primary" id="choose" type="button"> Choose a Color </button> 
+</div>
+<div class ="container"></div> 
+</div> 
 </body>  
 </html> 
