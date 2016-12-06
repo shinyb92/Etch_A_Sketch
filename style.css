@@ -3,12 +3,34 @@ font-family: Helvetica;
 text-align: center;
 }
 
-.grid{
+.column{
 border: solid 1px black; 
 display: inline-block;
 background: white;
 background-color:; 
+height: 60px;
+width: 60px;
+padding: 0;
+}
 
+.grid-container{
+	position: absolute;
+	margin-left: 130px;
+}
+
+
+.row{
+
+	padding: 0;
+	margin: 0
+
+
+}
+
+
+.container{
+	width: 50%;
+	margin-left: 250px;
 }
 
 .colored{
@@ -19,7 +41,7 @@ background: black;
 }
 
 .allbuttons{
-margin-left: 270px; 
+margin-left: 230px; 
 margin-bottom: 20px; 
 
 }
@@ -63,5 +85,12 @@ font-size: 16px;
 margin-right: 20px;
 
 
+}
+
+
+
+body{
+
+background: #536895;
 }
 
