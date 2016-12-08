@@ -64,6 +64,11 @@ function mouseDrawOff(){
 	$(".column").mouseup(function(){
 		$(".column").off("mouseover");
 	}); 
+
+	$(document).mouseup(function(){
+		$(".column").off("mouseover"); 
+	}); // prevents mouseover event from not being removed when 
+	// mouseup occurs outside the drawing space! 
 }
 
 
