@@ -23,16 +23,21 @@ function clearGraph(){
 
 
 function generateGrid(){
-  var gridSize = 12;
-  	$('.container').append("<div class='grid-container'></div>");
+  var gridSize = 40;
 
-  	for(rows = 0; rows < gridSize; rows++){
-  		$('.grid-container').append("<tr class='row'></tr>");
-  	}
+   for (var i = 0; i < gridSize; i++){
+  	var rowToCreate = $('<div></div>');
+  	rowToCreate.addClass('row');
 
-  	for(columns = 0; columns < gridSize; columns++){
-  		$('.row').append("<td class='column'></td>");
- 	 	}
+
+	  for(var j=0; j < gridSize; j++){
+	    rowToCreate.append("<div class='column'></div>");
+	  }
+
+    $('#container').append(rowToCreate);
+
+  }
+
 }
 
 function backGroundSet(){
