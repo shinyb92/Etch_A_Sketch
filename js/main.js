@@ -33,23 +33,21 @@ function generateGrid(){
 	  for(var j=0; j < gridSize; j++){
 	    rowToCreate.append("<div class='column'></div>");
 	  }
-
     $('#container').append(rowToCreate);
-
   }
 
 }
 
 function backGroundSet(){
 	$('body').css("background", "#536895");
-}
+} // overrides bootstrap default styles. 
 
 
 
  function mouseOver(selectedColor){
- $(".column").mouseover(function(){
- 		$(this).css("background", selectedColor);
- }); 
+	$(".column").mouseover(function(){
+			$(this).css("background", selectedColor);
+	}); 
 }
 
 function mouseDrawOn (color){
